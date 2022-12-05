@@ -77,22 +77,22 @@ html{
     height: 2px;
 }
 @keyframes fade-in {
-    from {
+    /* from {
         opacity: 0;
         width: 0;
     }
     to{
         opacity: 1;
         width: 100%;
-    }
+    } */
 }
 @keyframes fade-out {
-    from {
+    /* from {
         opacity: 1;
     }
     to{
         opacity: 0;
-    }
+    } */
 }
 .fade-in-element{
     animation: fade-in 1s;
@@ -190,6 +190,21 @@ h2{
     #skill-center1, #skill-center2{
         width: 100%;
     }
+    .clock-avatar{
+        position: relative;
+        display: flex;
+    }
+    #canvas-wrapper, #hire-me{
+        display: block;
+        width: 50%;
+        top: 0;
+    }
+    #cube-wrapper{
+        position: absolute;
+        right: 2em;
+        bottom: 0;
+        transform: translateY(8em) scale(0.8);
+    }
 }
 
 @media screen and (orientation: landscape) {
@@ -198,7 +213,13 @@ h2{
     }
     #skill-center1, #skill-center2, #skill-center0{
         width: 25%;
-
+    }
+    .clock-avatar{
+        display: flex;
+    }
+    .clock-avatar > div{
+        display: block;
+        width: 33%;
     }
 }
 #skill-center1, #skill-center2, #skill-center0{
@@ -250,17 +271,6 @@ li{
 #hire-me div{
     width: 85%;
     
-}
-.clock-avatar{
-    display: flex;
-}
-.clock-avatar > div{
-    display: block;
-    width: 33%;
-}
-#hire-me {
-    width: 50%;
-    margin: 0 auto;
 }
 #hire-me div img{
     width: 90%;

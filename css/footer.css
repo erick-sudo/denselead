@@ -7,6 +7,10 @@
     align-items: center;
     border-top: solid 1px rgb(123, 44, 15);
 }
+
+#footer > div{
+    
+}
 @media screen and (orientation: landscape) {
     #s-footer{
         flex-direction: row;
@@ -14,6 +18,18 @@
     .contacts{
         width: 50%;
     }
+    #footer{
+        flex-direction: row;
+    }
+    #footer > div {
+        width: 50%;
+
+    }
+    #contact-direct div a {
+        text-align: right;
+        border-right: solid 1px orangered;
+    }
+    
 }
 @media screen and (orientation: portrait) {
     #s-footer{
@@ -22,22 +38,27 @@
     .contacts{
         width: 100%;
     }
-}
-.contacts{
+    #footer{
+        flex-direction: column;
+    }
+    #footer > div {
+        width: 90%;
+        margin-top: 2em;
+    }
+    #contact-direct div a {
+        text-align: left;
+    }
 }
 #contact-direct div a{
     overflow-wrap: break-word;
     padding: 0.5em;
-    text-align: right;
     display: block;
     color: orangered;
     font-weight: bolder;
     font-size: 1.2em;
-    border-right: solid 1px orangered;
 }
 #social{
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     padding: 10px;
