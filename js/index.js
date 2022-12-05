@@ -143,10 +143,6 @@ $(document).ready(function(){
         rotateElements(skillElements.slice(0,center), W<H ? W*0.5 : H/2, W*0.4, H*0.4, 0)
         rotateElements(skillElements.slice(center), W<H ? W*0.5 : H/2, W*0.4, H*0.4, 1)
     }, 10);
-
-    Array.from(document.querySelectorAll(".projects")).map(element => {
-        
-    })
 });
 
 function getRandomColor(){
@@ -173,7 +169,7 @@ function getRandomNumber(mod) {
 }
 
 function checkposition(){
-    let sections = document.querySelectorAll("section");
+    let sections = document.querySelectorAll(".projects, .clock-avatar, #canvas-wrapper, #cube-wrapper, #hire-me, #skill-center0, #skill-center1, #skill-center2, #social, #contact-direct");
     let windowHeight = window.innerHeight;
     for(let section of sections) {
         if((section.getBoundingClientRect().top - windowHeight) < 0) {

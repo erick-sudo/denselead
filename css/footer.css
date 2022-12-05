@@ -8,6 +8,10 @@
     border-top: solid 1px rgb(123, 44, 15);
 }
 
+#foot{
+    background-color: 	rgba(22, 18, 18, 0.8);
+}
+
 #footer > div{
     
 }
@@ -20,6 +24,7 @@
     }
     #footer{
         flex-direction: row;
+
     }
     #footer > div {
         width: 50%;
